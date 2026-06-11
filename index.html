@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ANEMONIA - Professional photography portfolio specializing in street, portrait, landscape, and architectural storytelling.">
+    <title>ANEMONIA | Professional Photographer Portfolio</title>
+    <!-- Google Fonts: Outfit for Headings, Inter for Body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor" id="customCursor"></div>
+    <div class="custom-cursor-dot" id="customCursorDot"></div>
+
+    <!-- Navigation Header -->
+    <header class="main-header" id="mainHeader">
+        <div class="header-container">
+            <a href="#" class="logo" id="headerLogo">
+                <span>Rizaler</span><span class="dot">_</span>
+            </a>
+            
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="#" class="nav-link active" data-target="hero">Home</a></li>
+                    <li><a href="#about" class="nav-link" data-target="about">About</a></li>
+                    <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                    <li><a href="#services" class="nav-link" data-target="services">Services</a></li>
+                    <li><a href="#contact" class="nav-link" data-target="contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="#contact" class="btn btn-outline" id="navContactBtn">Book a Session</a>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-drawer" id="mobileDrawer">
+        <ul class="mobile-nav-links">
+            <li><a href="#" class="mobile-link" data-target="hero">Home</a></li>
+            <li><a href="#about" class="mobile-link" data-target="about">About</a></li>
+            <li><a href="portfolio.html" class="mobile-link">Portfolio</a></li>
+            <li><a href="#services" class="mobile-link" data-target="services">Services</a></li>
+            <li><a href="#contact" class="mobile-link" data-target="contact">Contact</a></li>
+        </ul>
+        <a href="#contact" class="btn btn-primary" id="mobileContactBtn">Book a Session</a>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="hero-bg-container">
+                <img src="assets\SaveInta.com_491468687_18505834129050422_594182519954490714_n.jpg" alt="Cinematic Rainy Street Photography" class="hero-bg-img" id="heroBgImg">
+            </div>
+            
+            <!-- Dark Overlay -->
+            <div class="hero-overlay"></div>
+            
+            <!-- Hero Content -->
+            <div class="hero-content">
+                <p class="hero-subtitle reveal-item">DOCUMENTARY & FINE ART PHOTOGRAPHY</p>
+                <h1 class="hero-title reveal-item">
+                    CAPTURING <span class="highlight">MOMENTS</span><br>
+                    SHAPING <span class="outline-text">STORIES</span>
+                </h1>
+                <p class="hero-desc reveal-item">Exploring the raw intersection of human connection, architecture, and dramatic landscapes through a cinematic lens.</p>
+                <div class="hero-cta reveal-item">
+                    <a href="#portfolio" class="btn btn-primary">Explore Gallery</a>
+                    <a href="#about" class="btn btn-link">Learn More 
+                        <svg class="arrow-icon" viewBox="0 0 24 24" width="20" height="20">
+                            <path fill="currentColor" d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Scroll Down Indicator -->
+            <a href="#about" class="scroll-down" id="scrollDownBtn">
+                <span class="scroll-text">Scroll Down</span>
+                <span class="scroll-line"></span>
+            </a>
+
+            <!-- Blur and Fade Out Section Separator -->
+            <div class="hero-separator"></div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section scroll-reveal" id="about">
+            <div class="section-container">
+                <div class="about-grid">
+                    
+                    <!-- About Text & Bio -->
+                    <div class="about-info scroll-reveal-child">
+                        <div class="section-tag">THE PHOTOGRAPHER</div>
+                        <h2 class="section-title">Behind the Lens: <span class="highlight">rizaler_</span></h2>
+                        <div class="section-line"></div>
+                        <p class="about-paragraph">
+                            I am a visual storyteller based in Pekanbaru, specializing in documentary street photography and fine art architectural framing. With over a decade of capturing the world's quiet dramas, my work explores the interplay between shadow, structure, and human essence.
+                        </p>
+                        <p class="about-paragraph">
+                            Every frame is an intentional dialogue with light. By focusing on minimal, bold compositions and striking contrasts, I strive to reveal the extraordinary narratives hiding in our everyday environments.
+                        </p>
+
+                        <!-- Stats Grid -->
+                        <div class="stats-grid">
+                            <div class="stat-card">
+                                <span class="stat-num" data-count="12">12+</span>
+                                <span class="stat-label">Years of Experience</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-num" data-count="450">450+</span>
+                                <span class="stat-label">Completed Projects</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-num" data-count="50">50+</span>
+                                <span class="stat-label">Official Projects</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- About Image Frame -->
+                    <div class="about-image-wrapper scroll-reveal-child">
+                        <div class="image-border-decor"></div>
+                        <div class="about-img-container">
+                            <img src="assets\SaveInta.com_491893796_18505859221050422_8875173366131876220_n.jpg" alt="Kala - Photographer Portrait" class="about-img">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Gallery Section -->
+        <section class="portfolio-section scroll-reveal" id="portfolio">
+            <div class="section-container">
+                <div class="portfolio-header">
+                    <div class="portfolio-headline scroll-reveal-child">
+                        <div class="section-tag">SELECTED WORKS</div>
+                        <h2 class="section-title">Captured <span class="highlight">Galleries</span></h2>
+                        <div class="section-line"></div>
+                    </div>
+                    
+                    <!-- Filters -->
+                    <div class="portfolio-filters scroll-reveal-child" id="galleryFilters">
+                        <button class="filter-btn active" data-filter="all">All Works</button>
+                        <button class="filter-btn" data-filter="street">Street</button>
+                        <button class="filter-btn" data-filter="portrait">Portrait</button>
+                        <button class="filter-btn" data-filter="architecture">Architecture</button>
+                        <button class="filter-btn" data-filter="landscape">Landscape</button>
+                    </div>
+                </div>
+
+                <!-- Gallery Grid -->
+                <div class="gallery-grid" id="galleryGrid">
+                    
+                    <!-- Gallery Item 1 (Street) -->
+                    <div class="gallery-item scroll-reveal-child" data-category="street" data-title="The Yellow Shelter" data-desc="A solitary transit under heavy rains, exploring loneliness in urban spaces." data-img="assets\SaveInta.com_642409887_18573385729050422_5014645749876100969_n.jpg">
+                        <div class="gallery-item-inner">
+                            <img src="assets\SaveInta.com_642409887_18573385729050422_5014645749876100969_n.jpg" alt="Street Photography - Yellow Umbrella in Rain" class="gallery-img">
+                            <div class="gallery-overlay">
+                                <div class="gallery-meta">
+                                    <span class="gallery-cat">Street Photography</span>
+                                    <h3 class="gallery-item-title">Picture 1</h3>
+                                </div>
+                                <button class="gallery-view-btn" aria-label="View Image">
+                                    <svg viewBox="0 0 24 24" width="24" height="24">
+                                        <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 2 (Architecture) -->
+                    <div class="gallery-item scroll-reveal-child" data-category="architecture" data-title="Geometric Angles" data-desc="Abstract building facets intersecting with shadows and negative gray space." data-img="assets\SaveInta.com_491897218_18505859203050422_598202441392675094_n.jpg">
+                        <div class="gallery-item-inner">
+                            <img src="assets\SaveInta.com_491897218_18505859203050422_598202441392675094_n.jpg" alt="Architecture - Minimalist Gold Panels" class="gallery-img">
+                            <div class="gallery-overlay">
+                                <div class="gallery-meta">
+                                    <span class="gallery-cat">Architectural Art</span>
+                                    <h3 class="gallery-item-title">Picture 2</h3>
+                                </div>
+                                <button class="gallery-view-btn" aria-label="View Image">
+                                    <svg viewBox="0 0 24 24" width="24" height="24">
+                                        <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 3 (Portrait) -->
+                    <div class="gallery-item scroll-reveal-child" data-category="portrait" data-title="Chroma Silhouette" data-desc="Dramatic studio portrait detailing raw profiles lit with electric amber gel." data-img="assets/SaveInta.com_651024872_18073168289532205_8250579831134501729_n.jpg">
+                        <div class="gallery-item-inner">
+                            <img src="assets/SaveInta.com_651024872_18073168289532205_8250579831134501729_n.jpg" alt="Portrait - Amber Light" class="gallery-img">
+                            <div class="gallery-overlay">
+                                <div class="gallery-meta">
+                                    <span class="gallery-cat">Fine Art Portrait</span>
+                                    <h3 class="gallery-item-title">Chroma Silhouette</h3>
+                                </div>
+                                <button class="gallery-view-btn" aria-label="View Image">
+                                    <svg viewBox="0 0 24 24" width="24" height="24">
+                                        <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 4 (Landscape) -->
+                    <div class="gallery-item scroll-reveal-child" data-category="landscape" data-title="Peak of Gold" data-desc="Dramatic landscape revealing a snow-capped peak crowned in sunset colors." data-img="assets\SaveInta.com_642992870_18573385756050422_5950057455984883665_n.jpg">
+                        <div class="gallery-item-inner">
+                            <img src="assets\SaveInta.com_642992870_18573385756050422_5950057455984883665_n.jpg" alt="Landscape - Golden Sunset Mountains" class="gallery-img">
+                            <div class="gallery-overlay">
+                                <div class="gallery-meta">
+                                    <span class="gallery-cat">Landscape</span>
+                                    <h3 class="gallery-item-title">Memories</h3>
+                                </div>
+                                <button class="gallery-view-btn" aria-label="View Image">
+                                    <svg viewBox="0 0 24 24" width="24" height="24">
+                                        <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- See All Pictures Button -->
+                <div class="portfolio-action scroll-reveal-child">
+                    <a href="portfolio.html" class="btn btn-primary" id="seeAllBtn">
+                        See All Pictures
+                        <svg class="arrow-icon" viewBox="0 0 24 24" width="20" height="20" style="margin-left: 8px; transition: transform 0.3s ease;">
+                            <path fill="currentColor" d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services-section scroll-reveal" id="services">
+            <div class="section-container">
+                <div class="section-header-centered scroll-reveal-child">
+                    <div class="section-tag">WHAT I OFFER</div>
+                    <h2 class="section-title">Creative <span class="highlight">Services</span></h2>
+                    <div class="section-line center"></div>
+                </div>
+
+                <!-- Services Grid -->
+                <div class="services-grid">
+                    
+                    <!-- Service Card 1 -->
+                    <div class="service-card scroll-reveal-child">
+                        <div class="service-icon-wrapper">
+                            <!-- SVG Camera Icon -->
+                            <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/>
+                                <circle cx="12" cy="13" r="4"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Editorial Campaigns</h3>
+                        <p class="service-desc">Tailored visual narrative campaigns for high-fashion, lifestyle, and editorial publications focusing on cinematic moodiness.</p>
+                        <ul class="service-features">
+                            <li>Creative Concept Development</li>
+                            <li>Multi-location Shooting</li>
+                            <li>Advanced Color Grading</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service Card 2 -->
+                    <div class="service-card scroll-reveal-child">
+                        <div class="service-icon-wrapper">
+                            <!-- SVG Portrait Icon -->
+                            <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 21a6 6 0 0 0-12 0"/>
+                                <circle cx="12" cy="10" r="4"/>
+                                <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2z"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Fine Art Portraits</h3>
+                        <p class="service-desc">Bespoke studio and on-site portraiture utilizing creative lighting (gel-lights, shadows) to capture character and emotion.</p>
+                        <ul class="service-features">
+                            <li>Custom Lighting Setup</li>
+                            <li>Styling and Mood Direction</li>
+                            <li>High-End Retouching</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service Card 3 -->
+                    <div class="service-card scroll-reveal-child">
+                        <div class="service-icon-wrapper">
+                            <!-- SVG Architectural/Building Icon -->
+                            <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M3 21h18M5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16M9 9h6M9 13h6M9 17h6"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Architectural Spaces</h3>
+                        <p class="service-desc">Documenting modern architecture, interior design projects, and urban structures with careful attention to symmetry, lines, and light.</p>
+                        <ul class="service-features">
+                            <li>Wide-angle Perspective Control</li>
+                            <li>HDR Ambient Blending</li>
+                            <li>Exterior & Interior Coverage</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section scroll-reveal" id="contact">
+            <div class="section-container">
+                <div class="contact-grid">
+                    
+                    <!-- Contact Details -->
+                    <div class="contact-info scroll-reveal-child">
+                        <div class="section-tag">GET IN TOUCH</div>
+                        <h2 class="section-title">Let's Create <span class="highlight">Together</span></h2>
+                        <div class="section-line"></div>
+                        <p class="contact-desc">Have a creative project, campaign, or exhibition idea in mind? Reach out to book a shoot or discuss collaborations.</p>
+                        
+                        <div class="contact-methods">
+                            <!-- Email -->
+                            <div class="contact-method-card">
+                                <div class="method-icon">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                        <polyline points="22,6 12,13 2,6"/>
+                                    </svg>
+                                </div>
+                                <div class="method-details">
+                                    <span class="method-label">Email</span>
+                                    <a href="mailto:rizaler@gmail.com" class="method-value">rizaler@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <!-- Phone -->
+                            <div class="contact-method-card">
+                                <div class="method-icon">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                    </svg>
+                                </div>
+                                <div class="method-details">
+                                    <span class="method-label">Phone</span>
+                                    <a href="tel:+6281234567890" class="method-value">+62 812 3456 7890</a>
+                                </div>
+                            </div>
+
+                            <!-- Studio -->
+                            <div class="contact-method-card">
+                                <div class="method-icon">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                        <circle cx="12" cy="10" r="3"/>
+                                    </svg>
+                                </div>
+                                <div class="method-details">
+                                    <span class="method-label">Studio Location</span>
+                                    <span class="method-value">Pekanbaru, Riau, Indonesia</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form Card -->
+                    <div class="contact-form-wrapper scroll-reveal-child">
+                        <form class="contact-form" id="contactForm" onsubmit="event.preventDefault(); alert('Message sent successfully!'); this.reset();">
+                            <h3 class="form-title">Send a Message</h3>
+                            
+                            <div class="form-group">
+                                <input type="text" id="formName" required placeholder=" " class="form-input">
+                                <label for="formName" class="form-label">Full Name</label>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="email" id="formEmail" required placeholder=" " class="form-input">
+                                <label for="formEmail" class="form-label">Email Address</label>
+                            </div>
+
+                            <div class="form-group">
+                                <select id="formService" class="form-input select-input" required>
+                                    <option value="" disabled selected hidden></option>
+                                    <option value="editorial">Editorial Campaign</option>
+                                    <option value="portrait">Fine Art Portrait</option>
+                                    <option value="architecture">Architectural Space</option>
+                                    <option value="collab">Creative Collaboration</option>
+                                </select>
+                                <label for="formService" class="form-label">Requested Service</label>
+                            </div>
+
+                            <div class="form-group">
+                                <textarea id="formMessage" required placeholder=" " class="form-input form-textarea"></textarea>
+                                <label for="formMessage" class="form-label">Project Details</label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block">Submit Inquiry</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="#" class="logo"><span>Rizaler_</span><span class="dot">.</span></a>
+                <p class="footer-tagline">Visual storytelling and dark ambient photography.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h4 class="footer-title">Navigation</h4>
+                <ul>
+                    <li><a href="#" class="footer-link">Home</a></li>
+                    <li><a href="#about" class="footer-link">About</a></li>
+                    <li><a href="#portfolio" class="footer-link">Portfolio</a></li>
+                    <li><a href="#services" class="footer-link">Services</a></li>
+                    <li><a href="#contact" class="footer-link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-socials">
+                <h4 class="footer-title">Connect</h4>
+                <div class="social-icons">
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                        </svg>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Twitter">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+                        </svg>
+                    </a>
+                    <a href="https://behance.net" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Behance">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 12a4 4 0 0 0-4-4H3v8h5a4 4 0 0 0 4-4zM8 10v4H5v-4h3zM21 9h-6v2h6V9zM21 13h-6v1h6v-1z"/>
+                            <path d="M12 12c0 2.2 1.8 4 4 4h2a4 4 0 0 0 4-4h-10z" opacity="0"/>
+                            <circle cx="18" cy="13" r="2"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 ENEMONIA. All Rights Reserved. Built with passion &bull; Hitam & Kuning Theme.</p>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox-modal" id="lightboxModal">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Close lightbox">
+            <svg viewBox="0 0 24 24" width="24" height="24">
+                <line x1="18" y1="6" x2="6" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <line x1="6" y1="6" x2="18" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+        </button>
+
+        <button class="lightbox-prev" id="lightboxPrev" aria-label="Previous image">
+            <svg viewBox="0 0 24 24" width="24" height="24">
+                <polyline points="15 18 9 12 15 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+
+        <div class="lightbox-content">
+            <img src="" alt="" class="lightbox-img" id="lightboxImg">
+            <div class="lightbox-details">
+                <span class="lightbox-category" id="lightboxCat">Category</span>
+                <h4 class="lightbox-title" id="lightboxTitle">Title</h4>
+                <p class="lightbox-desc" id="lightboxDesc">Description</p>
+            </div>
+        </div>
+
+        <button class="lightbox-next" id="lightboxNext" aria-label="Next image">
+            <svg viewBox="0 0 24 24" width="24" height="24">
+                <polyline points="9 18 15 12 9 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
